@@ -1,0 +1,14 @@
+header, .mainTitle, #search, #submit{
+	margin-bottom: 5%;
+}
+.thumbnail{
+	opacity: 1;
+}
+.thumbnail:hover{
+	opacity: 0.8;
+}
+@media only screen and (max-width: 768px) {
+	h2 {
+		padding-top: 9%;
+	}
+}

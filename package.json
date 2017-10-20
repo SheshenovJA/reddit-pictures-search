@@ -1,0 +1,21 @@
+{
+  "name": "example",
+  "version": "0.0.1",
+  "description": "some hit",
+  "main": "index.html",
+  "dependencies": {
+    "bootstrap": "^3",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "yo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com"
+  },
+  "author": "megas",
+  "license": "ISC",
+  "keywords": []
+}
