@@ -20,6 +20,7 @@ var redditAPI = "http://www.reddit.com/search.json?q=subreddit:";
 
     $.getJSON(redditAPI + sQuery + sParams,
     function(data){
+    {dataType: 'jsonp'}
       var HTML = '';
       if (data.data.children.length > 0) {
         $.each(data.data.children,function(i,data) {
@@ -37,9 +38,13 @@ var redditAPI = "http://www.reddit.com/search.json?q=subreddit:";
         HTML = "<p>No photos found that match: " + sQuery + ".</p>"
       }
       $('#photos').html(HTML);
-      $searchField.prop("disabled", false);
-      $submitButton.attr("disabled", false).val("Search");
-      $submitButton.removeClass('btn-warning') 
+   
+      setTimeout(function(){
+      	 $searchField.prop("disabled", false);
+     	 $submitButton.attr("disabled", false).val("Search");
+      	 $submitButton.removeClass('btn-warning') 
+      	}, 1000)
+     
     }); // end getJSON
 
   }); // end click
